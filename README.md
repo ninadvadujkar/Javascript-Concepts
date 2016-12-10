@@ -18,7 +18,7 @@ How to execute the code:
 eg. node callback_1.js
 eg. node promise_1.js
 
-1. [What is a callback?](./Callbacks/)
+[What is a callback?](./Callbacks/)
 A callback function is any function that is passed to another function
 Calback functions can be synchronous as well as asynchronous
 For eg. Array.forEach(function(arr){}) takes a function as a parameter, but this is the synchronous callback
@@ -39,7 +39,7 @@ setInterval(function(){
   console.log("Hello World!")
 }, 1000)
 
-2. [What is a promise?](./Promises)
+[What is a promise?](./Promises)
 A promise in Javascript is very much like a promise is real-life.
 For instance, your friend promises you that he'll give you his Assignment if he manages to do.
 Now in this case you will either get the Assignment or Babaji ka Thullu!
