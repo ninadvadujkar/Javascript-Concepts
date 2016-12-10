@@ -88,7 +88,7 @@ If you wish to contribute to this repository with your study material on Javascr
 Also if you've any suggestions, please do help me improve with your constructive criticism.
 
 I'm a social animal, so you can contact me on
-* Facebook  : facebook.com/nvadujkar
-* linkedin  : linkedin.com/in/ninad-vadujkar-58445a61
-* Twitter   : @nv_vit
-* instagram : @ninad_v
+* Facebook  : [facebook.com/nvadujkar](facebook.com/nvadujkar)
+* linkedin  : [linkedin.com/in/ninad-vadujkar-58445a61](linkedin.com/in/ninad-vadujkar-58445a61)
+* Twitter   : <u>@nv_vit</u>
+* instagram : <u>@ninad_v</u>
