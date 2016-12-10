@@ -8,7 +8,6 @@ So, what does this Repo has?
 This repository contains simple examples/programs that explain core javascript concepts like callbacks, promises, generators etc.
 I've written the programs in NodeJS so you'll need a Node Setup on your machine in order to run 'em.
 
-Follow the below link to download NodeJS
 [Download NodeJS](https://nodejs.org/en/download/)
 
 As of now the Repo only contains only one program for Callback and one for promises as I've just started!
@@ -48,6 +47,7 @@ Now in this case you will either get the Assignment or Babaji ka Thullu!
 A promise is a special kind of object in Javascript that lets you structure asynchronous code more efficiently.
 A particular code that's written entirely using Callbacks can be re-written using Promises which will make it more readable and
 easier to debug. (Basically it helps in avoiding callback hell)
+<br/>
 A promise object in Javascript either resolves or rejects.
 
 So, if your friend fulfills the promise of giving you the assignment, the promise is said to be resolved, else it's said to be rejected.
