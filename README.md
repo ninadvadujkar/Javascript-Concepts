@@ -4,26 +4,30 @@ But then I cannot access my local machine from anywhere except my home. Also, my
 
 Hence, I thought of creating this repository where I can keep on adding simple well-commented Javascript programs which can be of help to me as well as others to understand Javascript core concepts.
 
-So, what does this Repo has?
+<b>So, what does this Repo have?</b> <br />
 This repository contains simple examples/programs that explain core javascript concepts like callbacks, promises, generators etc.
-I've written the programs in NodeJS so you'll need a Node Setup on your machine in order to run 'em.
+<br/>I've written the programs in NodeJS so you'll need a Node Setup on your machine in order to run 'em.
 
 [Download NodeJS](https://nodejs.org/en/download/)
 
 As of now the Repo only contains only one program for Callback and one for promises as I've just started!
 Will keep on updating the repo with basic programs that explain JS Concepts.
 
-How to execute the code:
-eg. node callback_1.js
-eg. node promise_1.js
+<b>How to execute the code:</b>
+* eg. node callback_1.js
+* eg. node promise_1.js
 
 ## [What is a callback?](./Callbacks/)
 A callback function is any function that is passed to another function
+<br/>
 Calback functions can be synchronous as well as asynchronous
+<br/>
 For eg. Array.forEach(function(arr){}) takes a function as a parameter, but this is the synchronous callback
 
 In case of a async callback, the code does not wait for the API to return the data unlike traditional synchronous API's.
+<br/>
 Instead the control is passed back to the execution environment from where the code execution continues ahead.
+<br/>
 Whenever the API is done what it was supposed to do, it'll call the callback function from where we can either return the data or error, if any.
 
 E.g.
@@ -42,16 +46,23 @@ setInterval(function(){
 
 ## [What is a promise?](./Promises)
 A promise in Javascript is very much like a promise is real-life.
+<br/>
 For instance, your friend promises you that he'll give you his Assignment if he manages to do.
+<br/>
 Now in this case you will either get the Assignment or Babaji ka Thullu!
+<br/>
+<br/>
 A promise is a special kind of object in Javascript that lets you structure asynchronous code more efficiently.
+<br/>
 A particular code that's written entirely using Callbacks can be re-written using Promises which will make it more readable and
 easier to debug. (Basically it helps in avoiding callback hell)
 <br/>
 A promise object in Javascript either resolves or rejects.
 
 So, if your friend fulfills the promise of giving you the assignment, the promise is said to be resolved, else it's said to be rejected.
+<br/>
 The promise object has two methods "then" and "catch".
+<br/>
 If the promise is resolved, the "then" method is called else the "catch"
 
 E.g.
