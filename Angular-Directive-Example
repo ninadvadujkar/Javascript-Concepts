@@ -1,0 +1,64 @@
+<html>
+
+<body ng-app="myApp">
+  <h1>This is a sample AngularJS Program</h1>
+  <my-button id="button1"></my-button>
+  <br>
+  <my-button id="button2"></my-button>
+  <br>
+  <my-button id="button3"></my-button>
+  <br>
+  <my-button id="button4"></my-button>
+  <reset-settings></reset-settings>
+</body>
+
+</html>
+
+.active {
+  background-color: blue;
+}
+
+var app = angular.module('myApp', []);
+app.directive('myButton', function(myService) {
+  return {
+    restrict: 'E',
+    replace: true,
+    scope: {
+      id : "@"
+    },
+    template: "<button>Click me!</button>",
+    link: function(scope, elem, attrs){
+      elem.on('click', function(){
+        if(myService.activeButton){                
+         var currentActiveButton = angular.element(document.querySelector('#'+myService.activeButton));
+         currentActiveButton.removeClass('active');
+        }
+        elem.addClass('active');
+        myService.activeButton = scope.id;
+        console.log(myService.activeButton);
+      });
+    }
+  }
+});
+
+app.factory('myService', function(){
+  var factory = {};
+  factory.activeButton = "";
+  return factory;
+});
+
+app.directive('resetSettings', function(myService) {
+  return {
+    restrict: 'E',
+    replace: true,
+    scope: {},
+    template: "<button>Reset Settings</button>",
+    link: function(scope, elem, attrs){
+      elem.on('click', function(){
+        if(myService.activeButton){                var currentActiveButton = angular.element(document.querySelector('#'+myService.activeButton));
+         currentActiveButton.removeClass('active');
+        }
+      });
+    }
+  }
+});
